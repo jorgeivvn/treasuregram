@@ -15,6 +15,9 @@
   	{% else %}
       <p>Value: Unknown</p>
   	{% endif%}
+    <button id ="likes" data-id="{{treasure.id}}" class="btn btn-mini btn-danger glyphicon glyphicon-heart" type="button">Likes:
+  {% if treasure.likes > 0 %} {{ treasure.likes }} {% else %} None :( {% endif %}
+</button>
     <hr />
       {% endfor %}
       <form action="post_url/" method="post">

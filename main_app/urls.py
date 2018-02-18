@@ -5,6 +5,7 @@ from .views import post_treasure
 from .views import profile
 from .views import login_view
 from .views import logout_view
+from .views import like_treasure
 
 urlpatterns = [
     path(r'', index),
@@ -12,5 +13,6 @@ urlpatterns = [
     path('post_url/', post_treasure, name= "post_treasure"),
     path('user/', profile, name = 'profile'),
     path('login/', login_view, name="login_view"),
-    path('logout/', logout_view, name="logout_view")
+    path('logout/', logout_view, name="logout_view"),
+    path('like_treasure/', like_treasure, name='like_treasure')
 ]
